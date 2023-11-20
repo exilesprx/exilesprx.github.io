@@ -24,6 +24,10 @@ I always ran Linux, but not on my main desktop or laptop. That changed in 2023. 
 
 While you might not see projects explicitly related to Linux, I am always focused on learning anything Linux.
 
+### Exercism, Advent of Code, Project Euler
+
+I enjoy using each listed platform to learn new languages. They provide interesting and challenging problems to work through. Sometimes, you learn more than just a programming language!
+
 ## Tech Stack
 
 I enjoy working with a variety of technologies. Here are some of my favorites:
