@@ -1,5 +1,5 @@
 +++
-title = 'Welcome'
+title = ''
 date = 2024-01-30T07:07:07+01:00
 draft = true
 +++
