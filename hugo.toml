@@ -1,0 +1,5 @@
+baseURL = 'https://exilesprx.github.io/'
+languageCode = 'en-us'
+title = 'Exiles.prx - Github'
+publishDir = 'docs'
+theme = 'ananke'
