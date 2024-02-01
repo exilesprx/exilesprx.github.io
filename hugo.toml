@@ -1,7 +1,6 @@
 baseURL = 'https://exilesprx.github.io/'
 languageCode = 'en-us'
 title = 'exilesprx'
-publishDir = 'docs'
 theme = 'hugo-coder'
 
 paginate = 20
