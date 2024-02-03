@@ -14,6 +14,6 @@ Explore the journey of past and current projects, the decisions made, the reason
 
 ## Project Categories
 
-- **Docker:** Insights into the decision involving docker
+- **Docker:** Insights into decisions and results involving docker
 
 ---
