@@ -4,6 +4,7 @@ date = 2024-01-30T07:07:07+01:00
 draft = false
 +++
 
+- [Problem](#problem)
 - [Goals](#goals)
 - [How do we accomplish these goals?](#how-do-we-accomplish-these-goals)
   - [Reduced build quantity](#reduced-build-quantity)
@@ -16,6 +17,14 @@ draft = false
   - [docker-compose.build.yml](#docker-composebuildyml)
   - [callas-pdftoolbox/Dockerfile](#callas-pdftoolboxdockerfile)
 - [Notes](#how-do-you-build-new-version)
+
+## Problem
+
+The callas pdf toolbox was "baked" into a php docker image creating a couple issues:
+- increased docker image size
+- lack of separation of concerns
+
+We needed to improve the situation. And I was able to accompish the primary with additional positive side effects.
 
 ## Goals
   - reduced build quantity
