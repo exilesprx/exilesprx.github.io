@@ -9,11 +9,11 @@ Explore the journey of past and current projects, the decisions made, the reason
 ## Featured Project Stories
 
 1. **Optimizing docker builds**
-   - Learn about the decisions made for reducing the size of a docker image while improving controlled releases.
+   - Learn about the decisions made to improve the quality of a docker image and the benefits gained.
    - [Read More](/posts/docker/callas-pdf-toolbox)
 
 ## Project Categories
 
-- **Docker:** Insights into decisions and results involving docker
+- **Docker:>** Insights into decisions and results involving docker
 
 ---
