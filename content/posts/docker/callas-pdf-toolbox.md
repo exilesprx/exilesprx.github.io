@@ -1,5 +1,5 @@
 +++
-title = 'Callas PDF Toolbox!'
+title = 'Callas PDF Toolbox'
 date = 2024-01-30T07:07:07+01:00
 draft = false
 +++
