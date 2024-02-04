@@ -20,11 +20,11 @@ draft = false
 
 ## Problem
 
-The callas pdf toolbox was "baked" into a php docker image creating a couple issues:
+The Callas PDF Toolbox was integrated into a PHP Docker image, leading to a couple of issues:
 - increased docker image size
 - lack of separation of concerns
 
-We needed to improve the situation. And I was able to accompish the primary with additional positive side effects.
+I recognized the need for improvement, and I successfully addressed the primary issue with additional positive side effects.
 
 ## Goals
   - reduced build quantity
