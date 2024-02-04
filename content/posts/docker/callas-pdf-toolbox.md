@@ -24,7 +24,7 @@ The callas pdf toolbox was "baked" into a php docker image creating a couple iss
 - increased docker image size
 - lack of separation of concerns
 
-We needed to improve the situation. And I was able to accompish the primary with additional positive side effects.
+We needed to improve the situation, and I was able to accomplish the primary goal with additional positive side effects.
 
 ## Goals
   - reduced build quantity
