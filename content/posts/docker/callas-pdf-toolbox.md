@@ -2,6 +2,13 @@
 title = 'Callas PDF Toolbox'
 date = 2024-02-02T18:36:49-05:00
 draft = false
+description = "Optimizing a docker image"
+slug = ""
+authors = []
+tags = ["docker"]
+categories = ["docker"]
+externalLink = ""
+series = []
 +++
 
 - [Problem](#problem)
