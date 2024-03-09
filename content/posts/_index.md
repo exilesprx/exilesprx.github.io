@@ -14,7 +14,7 @@ Explore the journey of past and current projects, the decisions made, the reason
 
 2. Zig development
     - Cheatsheet for zig language. Reference: https://ziglings.org
-    - [Read More](/posts/zig/zigling-notes)
+    - [Read More](/posts/zig/zig-cheatsheet)
 
 ## Project Categories
 
