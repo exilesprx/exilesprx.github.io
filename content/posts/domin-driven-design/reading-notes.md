@@ -11,8 +11,19 @@ externalLink = ""
 series = []
 +++
 
-- Factories should be used to create entities when a command is requested.
-- Repositories should use a factory to create entities all of its invariants
+## Object construction
+- factories should be used to create objects which use many different parts
+- Reasoning: reduces redundancy by consolidating the construction of all variants into a single location which can be referenced when needed.
+
+## Repositories
+- use a factory to create entities and all of its invariants
+- Reasoning: moves the construction into factories
+
+- translate active record and/or ORM objects into plain old objects
+- Reasoning: decouples the framework from the domain alleviating issues while upgrading packages
+
+
+## specifications
 - using the power of sql for specifications. Caller should use a repo and creates a spec. **The specification should use a eloquent model and its methods (like a scope or builder methed) not sure about this, query should be in the repo**. Then the caller provides the spec to the repo. The repo calls the spec method. The spec then calls the necessary repo method providing the builder. The repo method returns the results which is then return by the spec which is then return by the original repo called that required the spec
 - three different specification implementation types: validation, selection (querying), building to order (generating)
 - try to factor the most intricate computations into standalone classes, perhaps by modeling value objects held by thr most connected classes. Meaning, let the standalone classes compute by using value objects and returning value objects, the same ones the others classes use
