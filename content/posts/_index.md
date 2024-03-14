@@ -12,13 +12,18 @@ Explore the journey of past and current projects, the decisions made, the reason
    - Learn about the decisions made to improve the quality of a docker image and the benefits gained.
    - [Read More](/posts/docker/callas-pdf-toolbox)
 
-2. Zig development
-    - Cheatsheet for zig language. Reference: https://ziglings.org
+2. **Zig development**
+    - Cheat sheet for zig language. Reference: https://ziglings.org
     - [Read More](/posts/zig/zig-cheatsheet)
+
+3. **Php development**
+    - Xdebug setup
+    - [Read More](/posts/php/xdebug)
 
 ## Project Categories
 
 - **Docker:>** Insights into decisions and results involving docker
 - **Zig:>** My journey with the zig language
+- **Php:>** Insights into my primary language
 
 ---

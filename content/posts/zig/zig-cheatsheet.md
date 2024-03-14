@@ -1,8 +1,8 @@
 +++ 
 draft = false
 date = 2024-03-09T18:45:10-05:00
-title = "Zig cheatsheet"
-description = "Zig cheatsheet from ziglings exercises"
+title = "Zig cheat sheet"
+description = "Zig cheat sheet from ziglings exercises"
 slug = "zig-cheatsheet"
 authors = ["exilesprx"]
 tags = ["zig", "cheatsheet", "ziglings"]
@@ -11,11 +11,11 @@ externalLink = ""
 series = []
 +++
 
-## Cheatsheet
+## Cheat sheet
 
 Reference: https://ziglings.org
 
-I compiled a cheatsheet from the ziglings exercises so I can quickly reference it should I forget something. I hope you might find it useful in your zig journey as well.
+I compiled a cheat sheet from the ziglings exercises so I can quickly reference it should I forget something. I hope you might find it useful in your zig journey as well.
 
 
 ## Pointers
