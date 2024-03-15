@@ -13,9 +13,11 @@ series = []
 
 Xdebug is one of those things that is pretty easy to setup. However, I find myself infrequently setting it up, so I always forget the steps. This post will serve as a reminder to myself, and hopefully help others as well.
 
+The content below only focuses on the server/docker container configurations and not the IDE. This article assumes you're using PHPStorm (specially the `PHP_IDE_CONFIG`), but the steps should be similar for other IDE's.
+
 Typically, I set most static things in the xdebug configuration file. Anything that changes I leverage environment variables. And it is a good practice to keep your configuration files clean and easy to maintain. Which is why I prefer not to set non-static values in the configuration file.
 
-If you're using docker, all proceeding steps still apply. If you're using docker compose, then you can leverage the .env file to set the environment variables.
+If you're using docker, all proceeding steps still apply. If you're using docker compose, then you can leverage the `.env` file to set the environment variables.
 
 Anyway, let's get started.
 
