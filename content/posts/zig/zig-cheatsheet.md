@@ -17,8 +17,14 @@ Reference: https://ziglings.org
 
 I compiled a cheat sheet from the ziglings exercises so I can quickly reference it should I forget something. I hope you might find it useful in your zig journey as well.
 
+## Namespaces
+
+```
+// methods declared in namespaces is also known as "decls"
+```
 
 ## Pointers
+
 ```
 //     FREE ZIG POINTER CHEATSHEET! (Using u8 as the example type.)
 //   +---------------+----------------------------------------------+
@@ -35,6 +41,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Tagged unions - exercise 057
+
 ```
 // If you don't have a need for a separate enum, you can define
 // an inferred enum with your union all in one place. Just use
@@ -48,6 +55,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Error unions
+
 ```
 // If canFail() fails, foo will equal 6.
 // One way to deal with error unions is to "catch" any error and
@@ -104,6 +112,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Optionals
+
 ```
 // Sometimes you know that a variable might hold a value or
 // it might not. Zig has a neat way of expressing this idea
@@ -141,6 +150,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Floating point numbers
+
 ```
 // As an example, Zig's f16 is a IEEE 754 "half-precision" binary
 // floating-point format ("binary16"), which is stored in memory
@@ -154,6 +164,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Coerce
+
 ```
 //
 // 1. Types can always be made _more_ restrictive.
@@ -215,6 +226,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Loop expressions
+
 ```
 // But what value is returned from a loop if a break statement is
 // never reached? We need a default expression. Thankfully, Zig
@@ -227,6 +239,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Labels
+
 ```
 // As we've just learned, you can return a value using a break
 // statement. Does that mean you can return a value from any
@@ -256,6 +269,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Comptime
+
 ```
 // ALL numeric literals in Zig are of type comptime_int or
 // comptime_float. They are of arbitrary size (as big or
@@ -393,6 +407,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Sentinels
+
 ```
 // A sentinel value indicates the end of data. Let's imagine a
 // sequence of lowercase letters where uppercase 'S' is the
@@ -469,7 +484,9 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 //
 //     @ptrCast(value: anytype) anytype
 ```
+
 ## Quoted identifiers
+
 ```
 //
 // Sometimes you need to create an identifier that will not, for
@@ -492,6 +509,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Structs
+
 ```
 //
 // Struct types are always "anonymous" until we give them a name:
@@ -573,6 +591,7 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 ```
 
 ## Async - regressed and not present in the current version as of writing this
+
 ```
 //
 // Six Facts:
@@ -692,5 +711,287 @@ I compiled a cheat sheet from the ziglings exercises so I can quickly reference 
 // program print the string
 //
 //     "ABCDEF"
+//
+```
+
+## Interfaces
+
+```
+//
+// Remember our ant and bee simulator constructed with unions
+// back in exercises 55 and 56? There, we demonstrated that
+// unions allow us to treat different data types in a uniform
+// manner.
+//
+// One neat feature was using tagged unions to create a single
+// function to print a status for ants *or* bees by switching:
+//
+//   switch (insect) {
+//      .still_alive => ...      // (print ant stuff)
+//      .flowers_visited => ...  // (print bee stuff)
+//   }
+//
+// Well, that simulation was running just fine until a new insect
+// arrived in the virtual garden, a grasshopper!
+//
+// Doctor Zoraptera started to add grasshopper code to the
+// program, but then she backed away from her keyboard with an
+// angry hissing sound. She had realized that having code for
+// each insect in one place and code to print each insect in
+// another place was going to become unpleasant to maintain when
+// the simulation expanded to hundreds of different insects.
+//
+// Thankfully, Zig has another comptime feature we can use
+// to get out of this dilemma called the 'inline else'.
+//
+// We can replace this redundant code:
+//
+//   switch (thing) {
+//       .a => |a| special(a),
+//       .b => |b| normal(b),
+//       .c => |c| normal(c),
+//       .d => |d| normal(d),
+//       .e => |e| normal(e),
+//       ...
+//   }
+//
+// With:
+//
+//   switch (thing) {
+//       .a => |a| special(a),
+//       inline else => |t| normal(t),
+//   }
+//
+// We can have special handling of some cases and then Zig
+// handles the rest of the matches for us.
+//
+```
+
+## C integration
+
+```
+//
+// When Andrew Kelley announced the idea of a new programming language
+// - namely Zig - in his blog on February 8, 2016, he also immediately
+// stated his ambitious goal: to replace the C language!
+//
+// In order to be able to achieve this goal at all, Zig should be
+// as compatible as possible with its "predecessor".
+// Only if it is possible to exchange individual modules in existing
+// C programs without having to use complicated wrappers,
+// the undertaking has a chance of success.
+//
+// So it is not surprising that calling C functions and vice versa
+// is extremely "smooth".
+//
+// To call C functions in Zig, you only need to specify the library
+// that contains said function. For this purpose there is a built-in
+// function corresponding to the well-known @import():
+//
+//                           @cImport()
+//
+// All required libraries can now be included in the usual Zig notation:
+//
+//                    const c = @cImport({
+//                        @cInclude("stdio.h");
+//                        @cInclude("...");
+//                    });
+//
+// Now a function can be called via the (in this example) constant 'c':
+//
+//                    c.puts("Hello world!");
+//
+
+//
+// Something must be considered when compiling with C functions.
+// Namely that the Zig compiler knows that it should include
+// corresponding libraries. For this purpose we call the compiler
+// with the parameter "lc" for such a program,
+// e.g. "zig run -lc hello_c.zig".
+//
+```
+
+## Memory allocation
+
+```
+//
+// Zig provides several different allocators. In the Zig
+// documentation, it recommends the Arena allocator for simple
+// programs which allocate once and then exit:
+//
+//     const std = @import("std");
+//
+//     // memory allocation can fail, so the return type is !void
+//     pub fn main() !void {
+//
+//         var arena = std.heap.ArenaAllocator.init(std.heap.page_allocator);
+//         defer arena.deinit();
+//
+//         const allocator = arena.allocator();
+//
+//         const ptr = try allocator.create(i32);
+//         std.debug.print("ptr={*}\n", .{ptr});
+//
+//         const slice_ptr = try allocator.alloc(f64, 5);
+//         std.debug.print("slice_ptr={*}\n", .{slice_ptr});
+//     }
+
+//
+// For more details on memory allocation and the different types of
+// memory allocators, see https://www.youtube.com/watch?v=vHWiDx_l4V0
+
+//
+//        // In order to be able to process the input values,
+//        // memory is required. An allocator is defined here for
+//        // this purpose.
+//        const ally = std.testing.allocator;
+//
+//        // The allocator is used to initialize an array into which
+//        // the numbers are stored.
+//        var list = std.ArrayList(u32).init(ally);
+//
+```
+
+## Formatting
+
+```
+//
+// C set string formatting standards over the years, and Zig is
+// following suit and growing daily. Due to this growth, there is
+// no official documentation for standard library features such
+// as string formatting.
+//
+// Therefore, the comments for the format() function are the only
+// way to definitively learn how to format strings in Zig:
+//
+//     https://github.com/ziglang/zig/blob/master/lib/std/fmt.zig#L29
+//
+
+//
+// And this is where it gets exciting, because format() accepts a
+// variety of formatting instructions. It's basically a tiny
+// language of its own. Here's a numeric example:
+//
+//     print("Catch-{x:0>4}.", .{twenty_two});
+//
+// This formatting instruction outputs a hexadecimal number with
+// leading zeros:
+//
+//     Catch-0x0016.
+//
+// Or you can center-align a string like so:
+//
+//     print("{s:*^20}\n", .{"Hello!"});
+//
+// Output:
+//
+//     *******Hello!*******
+//
+```
+
+## Data-oriented design
+
+```
+//
+// In the Zig community, you may see the difference in groupings
+// presented with the terms "Array of Structs" (AoS) versus
+// "Struct of Arrays" (SoA).
+//
+// To envision these two designs in action, imagine an array of
+// RPG character structs, each containing three different data
+// types (AoS) versus a single RPG character struct containing
+// three arrays of one data type each, like those in the exercise
+// above (SoA).
+//
+
+//
+// For a more practical application of "data-oriented design"
+// watch the following talk from Andrew Kelley, the creator of Zig:
+// https://vimeo.com/649009599
+//
+```
+
+## Testing
+
+```
+
+//
+// A big advantage of Zig is the integration of its own test system.
+// This allows the philosophy of Test Driven Development (TDD) to be
+// implemented perfectly. Zig even goes one step further than other
+// languages, the tests can be included directly in the source file.
+//
+// This has several advantages. On the one hand it is much clearer to
+// have everything in one file, both the source code and the associated
+// test code. On the other hand, it is much easier for third parties
+// to understand what exactly a function is supposed to do if they can
+// simply look at the test inside the source and compare both.
+//
+// Especially if you want to understand how e.g. the standard library
+// of Zig works, this approach is very helpful. Furthermore it is very
+// practical, if you want to report a bug to the Zig community, to
+// illustrate it with a small example including a test.
+//
+// Tests can be run via Zig build system or applied directly to
+// individual modules using "zig test xyz.zig".
+//
+```
+
+## Tokenization
+
+```
+//
+//        // In order to be able to process the input values,
+//        // memory is required. An allocator is defined here for
+//        // this purpose.
+//        const ally = std.testing.allocator;
+//
+//        // The allocator is used to initialize an array into which
+//        // the numbers are stored.
+//        var list = std.ArrayList(u32).init(ally);
+//
+//
+//        // This way you can never forget what is urgently needed
+//        // and the compiler doesn't grumble either.
+//        defer list.deinit();
+//
+//        // Now it gets exciting:
+//        // A standard tokenizer is called (Zig has several) and
+//        // used to locate the positions of the respective separators
+//        // (we remember, space and comma) and pass them to an iterator.
+//        var it = std.mem.tokenizeAny(u8, input, " ,");
+//
+//        // The iterator can now be processed in a loop and the
+//        // individual numbers can be transferred.
+//        while (it.next()) |num| {
+//            // But be careful: The numbers are still only available
+//            // as strings. This is where the integer parser comes
+//            // into play, converting them into real integer values.
+//            const n = try parseInt(u32, num, 10);
+//
+//            // Finally the individual values are stored in the array.
+//            try list.append(n);
+//        }
+//
+```
+
+## Threading
+
+```
+// These curly brackets are very important, they are necessary
+// to enclose the area where the threads are called.
+// Without these brackets, the program would not wait for the
+// end of the threads and they would continue to run beyond the
+// end of the program.
+// pub fn main() void {
+//    {
+//        Now we start the first thread, with the number as parameter
+//        const handle = try std.Thread.spawn(.{}, thread_function, .{1});
+//
+//        Waits for the thread to complete,
+//        then deallocates any resources created on `spawn()`.
+//        defer handle.join();
+//    }
+// }
 //
 ```
