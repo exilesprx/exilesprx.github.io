@@ -5,8 +5,6 @@ theme = 'hugo-coder'
 
 paginate = 20
 
-disqusShortname = "yourdiscussshortname"
-
 [markup.highlight]
 style = "github-dark"
 
@@ -15,8 +13,7 @@ style = "github-dark"
   info = "Software engineer"
   description = "Personal website"
   keywords = "blog,developer,personal"
-  avatarurl = "images/avatar.jpg"
-  gravatar = "campbell.andrew86@yahoo.com"
+  avatarurl = "images/headshot.jpg"
 
   faviconSVG = "/img/favicon.svg"
   favicon_32 = "/img/favicon-32x32.png"
