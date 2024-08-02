@@ -20,7 +20,7 @@ I am always eager to expand my horizons by taking on new projects, particularly 
 
 ## Companies
 
-I currently own SoupyButter, a technology-based company focused on delivering products for small businesses. You might ask yourself, why the name SoupyButter? I wanted a name that would standout. Its essentially a blend of last names between myself and my significant other.
+I currently own SoupyButter, a technology-based company focused on delivering products for small businesses. You might ask yourself, why the name SoupyButter? I wanted a name that would standout. Its essentially a blend of last names between my significant other and I.
 
 #### Why hire us?
 
