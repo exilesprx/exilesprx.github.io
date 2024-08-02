@@ -20,7 +20,18 @@ I am always eager to expand my horizons by taking on new projects, particularly 
 
 ## Companies
 
-I currently own [SoupyButter](https://soupybutter.com), a technology-based company focused on delivering products for small businesses. We specialize in Web Development, SaaS, Cloud Services, DevOps, Digital Transformation, Product Development, Mobile App Development and Consulting. Looking for something different? [Contact us](mailto:campbell.andrew+sales@soupybutter.com) and lets discuss how we fulfill your needs.
+I currently own [SoupyButter](https://soupybutter.com), a technology-based company dedicated to delivering innovative solutions for small businesses. We specialize in:
+
+- Web Development
+- SaaS
+- Cloud Services
+- DevOps
+- Digital Transformation
+- Product Development
+- Mobile App Development
+- Consulting.
+
+Looking for something different? [Contact us](mailto:campbell.andrew+sales@soupybutter.com) and lets discuss how we fulfill your needs.
 
 #### Why hire us?
 

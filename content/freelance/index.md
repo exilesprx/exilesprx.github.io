@@ -8,7 +8,18 @@ I am currently available for freelance work! If you are in need of a developer t
 
 ## Looking for a valuable business relationship?
 
-I own [SoupyButter](https://soupybutter.com), a technology-based company focused on delivering products for small businesses. We specialize in Web Development, SaaS, Cloud Services, DevOps, Digital Transformation, Product Development, Mobile App Development and Consulting. Looking for something different? [Contact us](mailto:campbell.andrew+sales@soupybutter.com) and lets discuss how we fulfill your needs.
+I own [SoupyButter](https://soupybutter.com), a technology-based company dedicated to delivering innovative solutions for small businesses. We specialize in:
+
+- Web Development
+- SaaS
+- Cloud Services
+- DevOps
+- Digital Transformation
+- Product Development
+- Mobile App Development
+- Consulting.
+
+Looking for something different? [Contact us](mailto:campbell.andrew+sales@soupybutter.com) and lets discuss how we fulfill your needs.
 
 #### Why hire us?
 
