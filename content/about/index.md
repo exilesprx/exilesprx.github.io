@@ -18,6 +18,16 @@ As of today, I have developed programs using a variety of programming languages.
 
 I am always eager to expand my horizons by taking on new projects, particularly those that change the world for the better. I believe we should all strive to make the world a better place, and what better way than by creating software that enhances our lives!
 
+## Companies
+
+I currently own SoupyButter, a technology-based company focused on delivering products for small businesses. You might ask yourself, why the name SoupyButter? I wanted a name that would standout. Its essentially a blend of last names between myself and my significant other.
+
+#### Why hire us?
+
+At SoupyButter, we provide software solutions that add high value to your business, making you feel warm and cozy like eating a bowl of soup on a cold winter day. In addition, we ensure a buttery smooth experience for your clients, whether internal or external.
+
+We care about our work! When you succeed, we succeed, and vice versa. If your company is looking for high-quality work, consider contacting SoupyButter.
+
 ## Books
 
 I value empirical evidence, exploring concepts from books to gauge their practicality in real world. The following books have significantly influenced my perspective on software engineering.
