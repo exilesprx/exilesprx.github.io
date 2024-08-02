@@ -58,6 +58,6 @@ style = "github-dark"
   weight = 2
   url = "about/"
 [[menu.main]]
-  name = "Freelance"
+  name = "For Hire"
   weight = 3
-  url = "freelance/"
+  url = "for-hire/"
