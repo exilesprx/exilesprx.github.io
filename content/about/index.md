@@ -20,11 +20,11 @@ I am always eager to expand my horizons by taking on new projects, particularly 
 
 ## Companies
 
-I currently own SoupyButter, a technology-based company focused on delivering products for small businesses. You might ask yourself, why the name SoupyButter? I wanted a name that would standout. Its essentially a blend of last names between my significant other and I.
+I currently own [SoupyButter](https://soupybutter.com), a technology-based company focused on delivering products for small businesses. We specialize in Web Development, SaaS, Cloud Services, DevOps, Digital Transformation, Product Development, Mobile App Development and Consulting. Looking for something different? [Contact us](mailto:campbell.andrew+sales@soupybutter.com) and lets discuss how we fulfill your needs.
 
 #### Why hire us?
 
-At SoupyButter, we provide software solutions that add high value to your business, making you feel warm and cozy like eating a bowl of soup on a cold winter day. In addition, we ensure a buttery smooth experience for your clients, whether internal or external.
+At [SoupyButter](https://soupybutter.com), we provide software solutions that add high value to your business, making you feel warm and cozy like eating a bowl of soup on a cold winter day. In addition, we ensure a buttery smooth experience for your clients, whether internal or external.
 
 We care about our work! When you succeed, we succeed, and vice versa. If your company is looking for high-quality work, consider contacting [SoupyButter](mailto:campbell.andrew+sales@soupybutter.com).
 
