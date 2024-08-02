@@ -26,7 +26,7 @@ I currently own SoupyButter, a technology-based company focused on delivering pr
 
 At SoupyButter, we provide software solutions that add high value to your business, making you feel warm and cozy like eating a bowl of soup on a cold winter day. In addition, we ensure a buttery smooth experience for your clients, whether internal or external.
 
-We care about our work! When you succeed, we succeed, and vice versa. If your company is looking for high-quality work, consider contacting SoupyButter.
+We care about our work! When you succeed, we succeed, and vice versa. If your company is looking for high-quality work, consider contacting [SoupyButter](mailto:campbell.andrew+sales@soupybutter.com).
 
 ## Books
 
