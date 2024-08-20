@@ -5,6 +5,9 @@ theme = 'hugo-coder'
 
 paginate = 20
 
+[services]
+[services.disqus]
+
 [markup.highlight]
 style = "github-dark"
 
