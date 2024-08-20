@@ -4,7 +4,7 @@ date = 2024-08-02T15:03:10-04:00
 draft = false
 +++
 
-I am currently available for freelance work! If you are in need of a developer that values your company and strives for high-quality software, please reach out to me at campbell.andrew86@gmail.com . My expertise includes web development, Linux applications, and more. For more details, see my [about](/about) page. You can also review my [resume](https://docs.google.com/document/d/1co1tjx6uP4Ngb9VbFKdvrRfdAALxCTUptJKC36N8uoo/edit?usp=sharing)
+I am currently available for freelance work! If you are in need of a developer that values your company and strives for high-quality software, please reach out to me at [Dot.](https://dot.cards/adcampbell) or [email](mailto:campbell.andrew86@gmail.com). My expertise includes web development, Linux applications, and more. For more details, see my [about](/about) page. You can also review my [resume](https://docs.google.com/document/d/1co1tjx6uP4Ngb9VbFKdvrRfdAALxCTUptJKC36N8uoo/edit?usp=sharing)
 
 ## Looking for a valuable business relationship?
 
