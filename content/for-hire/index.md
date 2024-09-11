@@ -19,10 +19,10 @@ I own [SoupyButter](https://soupybutter.com), a technology-based company dedicat
 - Mobile App Development
 - Consulting.
 
-Looking for something different? [Contact us](mailto:campbell.andrew+sales@soupybutter.com) and lets discuss how we fulfill your needs.
+Looking for something different? [Contact us](mailto:sales@soupybutter.com) and lets discuss how we fulfill your needs.
 
 #### Why hire us?
 
 At [SoupyButter](https://soupybutter.com), we provide software solutions that add high value to your business, making you feel warm and cozy like eating a bowl of soup on a cold winter day. In addition, we ensure a buttery smooth experience for your clients, whether internal or external.
 
-We care about our work! When you succeed, we succeed, and vice versa. If your company is looking for high-quality work, consider contacting [SoupyButter](mailto:campbell.andrew+sales@soupybutter.com).
+We care about our work! When you succeed, we succeed, and vice versa. If your company is looking for high-quality work, consider contacting [SoupyButter](mailto:sales@soupybutter.com).
