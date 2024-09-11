@@ -47,9 +47,14 @@ style = "github-dark"
   url = "https://github.com/exilesprx/"
 [[params.social]]
   name = "LinkedIn"
-  icon = "fa-brands fa-linkedin fa-2x"
+  icon = "fa fa-linkedin fa-2x"
   weight = 2
   url = "https://www.linkedin.com/in/andrew-campbell-014002134/"
+[[params.social]]
+  name = "dot."
+  icon = "fa fa-id-card fa-2x"
+  weight = 3
+  url = "https://dot.cards/adcampbell"
 
 # Menu links
 [[menu.main]]
