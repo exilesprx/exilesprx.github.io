@@ -82,9 +82,10 @@ I enjoy using each listed platform to learn new languages. They provide interest
 
 I enjoy working with a variety of technologies. Here are some of my favorites:
 
-- **Languages:** PHP, Haskell, Go, Python, JavaScript/TypeScript, Bash
-- **Database:** MySQL, Event Store
-- **Other:** Docker, Node, RabbitMQ
+- **Languages**: PAWN, PHP, TypeScript/JavaScript, Zig, Python, Haskell, Bash, Go, Lua, C#, Java
+- **Databases**: Mariadb, MySQL, MongoDB, EventStore
+- **Frameworks**: Laravel, Vue.js, Express, Nuxtjs, Zend, CakePHP, Phalcon
+- **Other**: Linux, Docker, GitLab workflows, Nodejs, Nginx, CI/CD, DevOps, Performance Engineering (PE), Test-Driven Development (TDD), Domain-Driven Design (DDD), Agile methodologies (Scrum, Kanban)
 
 Feel free to [contact me](mailto:exiles.prx@gmail.com) if you'd like to collaborate on a project or just chat about technology.
 
