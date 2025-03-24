@@ -1,7 +1,7 @@
 +++
 title = 'Visitor Pattern'
 date = 2025-03-24T17:57:09-04:00
-draft = true
+draft = false
 +++
 
 I recently came across a site named grugbrain.dev. It presents many good points that I agree with, but there are also a few I disagree with—one of them being the stance on the Visitor pattern. My main issue is the lack of explanation; the page literally just says "bad." I wish the author had elaborated on why they think it is bad. I believe it’s important to understand different viewpoints because, well, that’s how we learn. This thought stuck with me for a while.
