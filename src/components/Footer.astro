@@ -2,7 +2,7 @@
 import { Icon } from 'astro-icon/components';
 
 const year = new Date().getFullYear();
-const author = 'Andrew Campbell';
+const author = 'Soupy Butter';
 
 const socialLinks = [
   {
@@ -39,7 +39,7 @@ const navLinks = [
         <h2 class="text-xl font-bold text-primary mb-3">Andrew Campbell</h2>
         <p class="text-sm text-gray-600 mb-4">Software Engineer specializing in web development and creating elegant solutions to complex problems.</p>
       </div>
-      
+
       <!-- Quick links -->
       <div class="flex flex-col">
         <h3 class="font-semibold text-primary mb-3">Links</h3>
@@ -51,13 +51,13 @@ const navLinks = [
           ))}
         </nav>
       </div>
-      
+
       <!-- Connect section -->
       <div class="flex flex-col">
         <h3 class="font-semibold text-primary mb-3">Connect</h3>
         <div class="flex flex-wrap gap-4">
           {socialLinks.map(link => (
-            <a 
+            <a
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
@@ -71,7 +71,7 @@ const navLinks = [
         </div>
       </div>
     </div>
-    
+
     <!-- Bottom footer with copyright -->
     <div class="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between text-sm text-gray-600">
       <p>&#169; {year} {author}. All rights reserved.</p>
