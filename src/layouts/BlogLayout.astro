@@ -1,0 +1,57 @@
+---
+import '@styles/global.css';
+import { ClientRouter } from 'astro:transitions';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html
+  lang="en"
+  class="scroll-smooth"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content={description}
+    />
+    <meta
+      name="viewport"
+      content="width=device-width"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <meta
+      name="generator"
+      content={Astro.generator}
+    />
+    <title>{title}</title>
+    <ClientRouter />
+  </head>
+  <body class="font-mono bg-white text-primary">
+    <div class="min-h-screen flex flex-col">
+      <Header />
+      <main class="flex-grow">
+        <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div class="bg-gray-100 rounded-lg p-8">
+            <div class="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-primary prose-a:text-primary prose-img:rounded-lg prose-img:shadow-md">
+              <slot />
+            </div>
+          </div>
+        </article>
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface SkillProps {
+  name: string;
+}
+
+const skills: SkillProps[] = [
+  { name: 'devicon:go-wordmark' },
+  { name: 'devicon:zig' },
+  { name: 'devicon:php' },
+  { name: 'devicon:javascript' },
+  { name: 'devicon:typescript' },
+  { name: 'devicon:python' },
+  { name: 'devicon:lua' },
+  { name: 'devicon:haskell' },
+  { name: 'devicon:bash' },
+  { name: 'devicon:laravel' },
+  { name: 'devicon:react' },
+  { name: 'devicon:vuejs' },
+  { name: 'devicon:nuxtjs' },
+  { name: 'devicon:hugo-wordmark' },
+  { name: 'devicon:nodejs-wordmark' },
+  { name: 'devicon:docker' },
+  { name: 'devicon:git-wordmark' },
+  { name: 'devicon:linux' },
+  { name: 'devicon:mariadb-wordmark' },
+  { name: 'devicon:mongodb-wordmark' },
+  { name: 'devicon:nginx' }
+];
+---
+
+<div class="slider max-w-3xs sm:max-w-xs truncate">
+  <div class="slides text-black flex w-max">
+    {
+      skills.concat(skills).map((skill) => (
+        <Icon
+          name={skill.name}
+          class="opacity-70 size-4 lg:size-6 mr-6"
+          fill="currentColor"
+        />
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .slides {
+    animation: slider-slide-left 20s linear infinite;
+  }
+
+  @keyframes slider-slide-left {
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+</style>

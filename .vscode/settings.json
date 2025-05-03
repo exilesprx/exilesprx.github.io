@@ -1,0 +1,26 @@
+{
+  "mcp": {
+    "inputs": [],
+    "servers": {
+      "puppeteer": {
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+      }
+    }
+  },
+  "github.copilot.chat.codeGeneration.instructions": [
+    "Follow these guidelines when generating code and suggestions:",
+
+    "DEVELOPMENT STANDARDS:",
+    "- Enforce strict TypeScript settings and ensure type safety across the project",
+    "- Use TailwindCSS for all styling following the utility-first approach",
+    "- Create Astro components that are modular, reusable, and maintain clear separation of concerns",
+
+    "CODING STYLE:",
+    "- Begin each code snippet with the path/filename as a one-line comment",
+    "- Write comments that describe purpose rather than effect",
+    "- Prioritize modularity, DRY principles, and performance in all code",
+    "- Follow the prettier formatting style. The config is in the root directory of the project",
+    "- Follow the editor formatting style. The config is in the root directory of the project"
+  ]
+}
