@@ -1,0 +1,107 @@
+---
+import Button from '@components/Button.astro';
+import SkillCarousel from '@components/SkillCarousel.astro';
+import About from '@components/About.astro';
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+import portraitImg from '@assets/portrait.png';
+
+interface PortraitProps {
+  src: ImageMetadata;
+  alt: string;
+}
+
+const portrait: PortraitProps = {
+  src: portraitImg,
+  alt: 'My portrait'
+};
+
+interface LandingProps {
+  title: string;
+  subtitle: string;
+  cta: { title: string; link: string };
+  social: Array<{ icon: string; link: string }>;
+}
+
+const items: LandingProps = {
+  title: 'Andrew Campbell',
+  subtitle: 'Software Engineer',
+  cta: { title: 'Email me', link: 'mailto:campbell.andrew86@yahoo.com' },
+  social: [
+    {
+      icon: 'fa6-brands:instagram',
+      link: 'https://instagram.com'
+    },
+    {
+      icon: 'fa6-brands:twitter',
+      link: 'https://x.com'
+    },
+    {
+      icon: 'fa6-brands:facebook',
+      link: 'https://facebook.com'
+    },
+    {
+      icon: 'fa6-brands:linkedin',
+      link: 'https://linkedin.com'
+    }
+  ]
+};
+---
+
+<section>
+  <div class="mx-auto min-h-screen">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-4 md:gap-8">
+      <div class="md:col-span-2 bg-gray-100 min-h-screen p-8 pt-12 lg:pt-24">
+        <div class="justify-center justify-items-center text-center">
+          <div class="py-4">
+            <Image
+              src={portrait.src}
+              alt={portrait.alt}
+            />
+          </div>
+          <div
+            class="py-4 text-primary font-bold text-2xl md:text-2xl lg:text-4xl"
+          >
+            {items.title}
+          </div>
+          <div class="py-4 text-primary text-lg md:text-lg lg:text-xl">
+            {items.subtitle}
+          </div>
+          <div class="grid grid-cols-1 justify-center">
+            <div class="py-4">
+              <SkillCarousel />
+            </div>
+            <div class="py-4">
+              <Button
+                title={items.cta.title}
+                link={items.cta.link}
+              />
+            </div>
+            <div
+              class="grid grid-cols-4 gap-6 justify-center justify-items-center"
+            >
+              {
+                items.social.map((social) => (
+                  <a
+                    class="py-4 text-primary/85"
+                    href={social.link}
+                  >
+                    <Icon
+                      name={social.icon}
+                      class="size-6 lg:size-12"
+                      fill="currentColor"
+                    />
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 min-h-screen p-8 justify-center pt-12 lg:pt-24">
+        <About />
+      </div>
+    </div>
+  </div>
+</section>

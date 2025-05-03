@@ -1,0 +1,14 @@
+---
+const { link, title } = Astro.props;
+---
+
+<a
+  class="group relative text-center text-sm font-medium focus:ring-3 focus:outline-hidden no-underline"
+  href={link}
+>
+  <span
+    class="block border border-primary/85 bg-primary/85 px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 font-bold text-white"
+  >
+    {title}
+  </span>
+</a>
