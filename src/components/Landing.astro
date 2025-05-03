@@ -18,6 +18,7 @@ const portrait: PortraitProps = {
 
 interface LandingProps {
   title: string;
+  alias: string;
   subtitle: string;
   cta: { title: string; link: string };
   social: Array<{ icon: string; link: string }>;
@@ -25,6 +26,7 @@ interface LandingProps {
 
 const items: LandingProps = {
   title: 'Andrew Campbell',
+  alias: 'Exiles.prx',
   subtitle: 'Software Engineer',
   cta: { title: 'Email me', link: 'mailto:exiles.prx@gmail.com' },
   social: [
@@ -64,6 +66,9 @@ const items: LandingProps = {
             class="py-4 text-primary font-bold text-2xl md:text-2xl lg:text-4xl"
           >
             {items.title}
+          </div>
+          <div class="text-primary text-sm md:text-sm lg:text-md">
+            aka {items.alias}
           </div>
           <div class="py-4 text-primary text-lg md:text-lg lg:text-xl">
             {items.subtitle}
