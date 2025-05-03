@@ -1,5 +1,5 @@
 ---
-import Logo from '@assets/astro.svg';
+import { Icon } from 'astro-icon/components';
 
 interface MenuItems {
   name: string;
@@ -22,7 +22,13 @@ const buttons: MenuItems[] = [];
       href="/#"
     >
       <span class="sr-only">Home</span>
-      <Logo />
+      <div class="text-black">
+        <span class="font-bold">Exiles.prx</span>
+        <Icon
+          name="fa6-brands:github"
+          class="size-8 inline"
+        />
+      </div>
     </a>
 
     <div class="flex flex-1 items-center justify-end md:justify-between">
