@@ -13,5 +13,7 @@ export default defineConfig({
 
   integrations: [icon()],
 
-  output: 'static'
+  output: 'static',
+
+  site: process.env.SITE_URL || 'https://exilesprx.github.io'
 });
