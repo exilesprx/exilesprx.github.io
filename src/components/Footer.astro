@@ -26,6 +26,8 @@ const navLinks = [
   { name: 'Home', url: '/' },
   { name: 'Blog', url: '/posts' },
   { name: 'About', url: '/#about' },
+  { name: 'For Hire', url: '/for-hire' },
+  { name: 'Portfolio', url: '/portfolio' },
   { name: 'Contact', url: 'mailto:exiles.prx@gmail.com' }
 ];
 ---
@@ -37,18 +39,26 @@ const navLinks = [
       <!-- Logo/branding section -->
       <div class="flex flex-col">
         <h2 class="text-xl font-bold text-primary mb-3">Andrew Campbell</h2>
-        <p class="text-sm text-gray-600 mb-4">Software Engineer specializing in web development and creating elegant solutions to complex problems.</p>
+        <p class="text-sm text-gray-600 mb-4">
+          Software Engineer specializing in web development and creating elegant
+          solutions to complex problems.
+        </p>
       </div>
 
       <!-- Quick links -->
       <div class="flex flex-col">
         <h3 class="font-semibold text-primary mb-3">Links</h3>
         <nav class="flex flex-col space-y-2">
-          {navLinks.map(link => (
-            <a href={link.url} class="text-sm text-gray-600 hover:text-primary transition-colors">
-              {link.name}
-            </a>
-          ))}
+          {
+            navLinks.map((link) => (
+              <a
+                href={link.url}
+                class="text-sm text-gray-600 hover:text-primary transition-colors"
+              >
+                {link.name}
+              </a>
+            ))
+          }
         </nav>
       </div>
 
@@ -56,24 +66,31 @@ const navLinks = [
       <div class="flex flex-col">
         <h3 class="font-semibold text-primary mb-3">Connect</h3>
         <div class="flex flex-wrap gap-4">
-          {socialLinks.map(link => (
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="flex items-center text-gray-600 hover:text-primary transition-colors"
-              aria-label={`Visit ${link.name}`}
-            >
-              <Icon name={link.icon} class="size-5" />
-              <span class="ml-2 text-sm">{link.name}</span>
-            </a>
-          ))}
+          {
+            socialLinks.map((link) => (
+              <a
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center text-gray-600 hover:text-primary transition-colors"
+                aria-label={`Visit ${link.name}`}
+              >
+                <Icon
+                  name={link.icon}
+                  class="size-5"
+                />
+                <span class="ml-2 text-sm">{link.name}</span>
+              </a>
+            ))
+          }
         </div>
       </div>
     </div>
 
     <!-- Bottom footer with copyright -->
-    <div class="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between text-sm text-gray-600">
+    <div
+      class="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between text-sm text-gray-600"
+    >
       <p>&#169; {year} {author}. All rights reserved.</p>
       <p class="mt-2 md:mt-0">Built with Astro and Tailwind CSS</p>
     </div>
