@@ -3,7 +3,7 @@ title: Xdebug setup
 description: Easy method to setup xdebug
 slug: 'php/xdebug'
 pubDate: 1746481699255
-tags: ['php', 'xdebug']
+tags: ['php', 'xdebug', 'configurations']
 isDraft: false
 ---
 
