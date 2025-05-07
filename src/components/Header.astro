@@ -1,5 +1,6 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
+import logo from '@assets/logo.jpeg';
 
 interface MenuItems {
   name: string;
@@ -24,9 +25,12 @@ const buttons: MenuItems[] = [];
       <span class="sr-only">Home</span>
       <div class="text-black">
         <span class="font-bold">Home</span>
-        <Icon
-          name="fa6-brands:github"
-          class="size-8 inline"
+        <Image
+          src={logo}
+          class="size=8 inline rounded-full"
+          alt=""
+          height="32"
+          width="32"
         />
       </div>
     </a>
