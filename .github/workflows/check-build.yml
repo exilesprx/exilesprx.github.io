@@ -1,0 +1,26 @@
+name: Check and build site
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-and-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ['22', '24']
+    name: Node ${{ matrix.node-version }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: |
+          corepack enable
+          pnpm install
+      - name: Check and build site
+        run: pnpm run build
