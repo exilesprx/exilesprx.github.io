@@ -32,14 +32,14 @@ const navLinks = [
 ];
 ---
 
-<footer class="bg-gray-100 border-t border-gray-200">
+<footer class="bg-gray-100 text-primary dark:text-white dark:bg-black/95 border-t border-gray-200 dark:border-black">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
     <!-- Top footer section with links -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
       <!-- Logo/branding section -->
       <div class="flex flex-col">
-        <h2 class="text-xl font-bold text-primary mb-3">Andrew Campbell</h2>
-        <p class="text-sm text-gray-600 mb-4">
+        <h2 class="text-xl font-bold mb-3">Andrew Campbell</h2>
+        <p class="text-sm text-gray-600 dark:text-white mb-4">
           Software Engineer specializing in web development and creating elegant
           solutions to complex problems.
         </p>
@@ -47,13 +47,13 @@ const navLinks = [
 
       <!-- Quick links -->
       <div class="flex flex-col">
-        <h3 class="font-semibold text-primary mb-3">Links</h3>
+        <h3 class="font-semibold mb-3 text-primary dark:text-white">Links</h3>
         <nav class="flex flex-col space-y-2">
           {
             navLinks.map((link) => (
               <a
                 href={link.url}
-                class="text-sm text-gray-600 hover:text-primary transition-colors"
+                class="text-sm text-gray-600 dark:text-white hover:text-primary dark:hover:text-black transition-colors"
               >
                 {link.name}
               </a>
@@ -64,7 +64,7 @@ const navLinks = [
 
       <!-- Connect section -->
       <div class="flex flex-col">
-        <h3 class="font-semibold text-primary mb-3">Connect</h3>
+        <h3 class="font-semibold text-primary dark:text-white mb-3">Connect</h3>
         <div class="flex flex-wrap gap-4">
           {
             socialLinks.map((link) => (
@@ -72,7 +72,7 @@ const navLinks = [
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center text-gray-600 hover:text-primary transition-colors"
+                class="flex items-center text-gray-600 dark:text-white hover:text-primary transition-colors"
                 aria-label={`Visit ${link.name}`}
               >
                 <Icon
@@ -89,7 +89,7 @@ const navLinks = [
 
     <!-- Bottom footer with copyright -->
     <div
-      class="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between text-sm text-gray-600"
+      class="pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between text-sm text-gray-600 dark:text-white"
     >
       <p>&#169; {year} {author}. All rights reserved.</p>
       <p class="mt-2 md:mt-0">Built with Astro and Tailwind CSS</p>
