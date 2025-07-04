@@ -11,11 +11,11 @@ const { title, date, tags, link } = Astro.props as PostCardProps;
 
 <section>
   <article
-    class="rounded-[10px] border border-gray-200 bg-white px-4 pt-12 pb-4 my-4"
+    class="rounded-[10px] border border-gray-200 dark:border-slate-700 bg-white dark:bg-slate-800 px-4 pt-12 pb-4 my-4 shadow-sm dark:shadow-slate-900/50 dark-mode-transition"
   >
     <time
       datetime="2022-10-10"
-      class="block text-xs text-gray-500"
+      class="block text-xs text-primary/70 dark:text-white/70"
     >
       {date}
     </time>
@@ -24,7 +24,7 @@ const { title, date, tags, link } = Astro.props as PostCardProps;
       href={link}
       class="no-underline"
     >
-      <h3 class="mt-0.5 text-lg font-medium text-gray-900">
+      <h3 class="mt-0.5 text-lg font-medium text-primary dark:text-white hover:text-primary/80 dark:hover:text-white/80 transition-colors">
         {title}
       </h3>
     </a>
@@ -32,7 +32,7 @@ const { title, date, tags, link } = Astro.props as PostCardProps;
     <div class="mt-4 flex flex-wrap gap-1">
       {
         tags.map((tag) => (
-          <span class="rounded-full bg-purple-100 px-2.5 py-0.5 text-xs whitespace-nowrap text-purple-600">
+          <span class="rounded-full bg-primary/10 dark:bg-white/10 px-2.5 py-0.5 text-xs whitespace-nowrap text-primary dark:text-white">
             {tag}
           </span>
         ))
