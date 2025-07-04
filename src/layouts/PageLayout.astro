@@ -39,14 +39,14 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class="font-mono bg-white text-primary">
+  <body class="font-mono bg-white dark:bg-slate-900 text-primary dark:text-white dark-mode-transition">
     <div class="min-h-screen flex flex-col">
       <Header />
       <main class="flex-grow">
         <article class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div class="">
             <div
-              class="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-primary prose-a:text-primary prose-img:rounded-lg prose-img:shadow-md"
+              class="prose prose-lg max-w-none prose-headings:font-bold prose-headings:text-primary dark:prose-headings:text-white prose-a:text-primary dark:prose-a:text-white prose-img:rounded-lg prose-img:shadow-md dark:prose-invert"
             >
               <slot />
             </div>

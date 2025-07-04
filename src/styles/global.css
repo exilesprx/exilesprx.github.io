@@ -44,6 +44,13 @@ body {
   border: 1px solid #e5e7eb;
 }
 
+/* Dark mode code blocks */
+.dark .prose pre {
+  background-color: #334155;
+  color: #f1f5f9;
+  border-color: #475569;
+}
+
 /* Custom styling for blockquotes */
 .prose blockquote {
   border-left-width: 4px;
@@ -51,6 +58,13 @@ body {
   padding-left: 1rem;
   font-style: italic;
   background-color: #f9fafb;
+}
+
+/* Dark mode blockquotes */
+.dark .prose blockquote {
+  border-color: #60a5fa;
+  background-color: #1e293b;
+  color: #cbd5e1;
 }
 
 /* Headings styling */
@@ -67,4 +81,35 @@ body {
 .prose p {
   margin-bottom: 1.25em;
   line-height: 1.7;
+}
+
+/* Dark mode utilities */
+.dark-mode-transition {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Custom scrollbar for dark mode */
+.dark {
+  scrollbar-width: thin;
+  scrollbar-color: #475569 #1e293b;
+}
+
+.dark::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dark::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+.dark::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
 }

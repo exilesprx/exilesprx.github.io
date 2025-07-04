@@ -12,56 +12,56 @@ const posts = await getCollection('blog', ({ data }) => {
   description="A collection of my thoughts, projects, and insights."
 >
   <main>
-    <div>
+    <div class="text-primary/70 dark:text-white/70 mb-8">
       Explore the journey of past and current projects, the decisions made, the
       reasoning behind those decisions, and the results achieved through my
       insightful articles.
     </div>
 
     <span class="flex items-center pt-8">
-      <span class="shrink-0 pe-4 text-gray-900">Featured Project Stories</span>
+      <span class="shrink-0 pe-4 text-primary dark:text-white">Featured Project Stories</span>
 
-      <span class="h-px flex-1 bg-gray-300"></span>
+      <span class="h-px flex-1 bg-primary/30 dark:bg-white/30"></span>
     </span>
 
-    <ol>
+    <ol class="space-y-6 mt-8">
       <li>
-        <strong>Optimizing docker builds</strong>
-        <ul>
-          <li>
+        <strong class="text-primary dark:text-white">Optimizing docker builds</strong>
+        <ul class="mt-2 space-y-1">
+          <li class="text-primary/70 dark:text-white/70">
             Learn about the decisions made to improve the quality of a docker
             image and the benefits gained.
           </li>
           <li>
             <a
               href="/posts/docker/callas-pdf-toolbox"
-              class="text-primary hover:text-primary/80 font-medium underline-offset-2 hover:underline transition-colors"
+              class="text-primary dark:text-white hover:text-primary/80 dark:hover:text-white/80 font-medium underline-offset-2 hover:underline transition-colors"
               >Read more</a
             >
           </li>
         </ul>
       </li>
       <li>
-        <strong>Zig development</strong>
-        <ul>
-          <li>Cheat sheet for zig language. Reference: https://ziglings.org</li>
+        <strong class="text-primary dark:text-white">Zig development</strong>
+        <ul class="mt-2 space-y-1">
+          <li class="text-primary/70 dark:text-white/70">Cheat sheet for zig language. Reference: https://ziglings.org</li>
           <li>
             <a
               href="/posts/zig/zig-cheatsheet"
-              class="text-primary hover:text-primary/80 font-medium underline-offset-2 hover:underline transition-colors"
+              class="text-primary dark:text-white hover:text-primary/80 dark:hover:text-white/80 font-medium underline-offset-2 hover:underline transition-colors"
               >Read more</a
             >
           </li>
         </ul>
       </li>
       <li>
-        <strong>Php development</strong>
-        <ul>
-          <li>Xdebug setup</li>
+        <strong class="text-primary dark:text-white">Php development</strong>
+        <ul class="mt-2 space-y-1">
+          <li class="text-primary/70 dark:text-white/70">Xdebug setup</li>
           <li>
             <a
               href="/posts/php/xdebug"
-              class="text-primary hover:text-primary/80 font-medium underline-offset-2 hover:underline transition-colors"
+              class="text-primary dark:text-white hover:text-primary/80 dark:hover:text-white/80 font-medium underline-offset-2 hover:underline transition-colors"
               >Read more</a
             >
           </li>
@@ -70,34 +70,34 @@ const posts = await getCollection('blog', ({ data }) => {
     </ol>
 
     <span class="flex items-center pt-8">
-      <span class="shrink-0 pe-4 text-gray-900">Project Categories</span>
+      <span class="shrink-0 pe-4 text-primary dark:text-white">Project Categories</span>
 
-      <span class="h-px flex-1 bg-gray-300"></span>
+      <span class="h-px flex-1 bg-primary/30 dark:bg-white/30"></span>
     </span>
 
-    <ul>
+    <ul class="space-y-4 mt-8">
       <li>
-        <strong>Docker:</strong>
-        <span>Insights into decisions and results involving docker</span>
+        <strong class="text-primary dark:text-white">Docker:</strong>
+        <span class="text-primary/70 dark:text-white/70">Insights into decisions and results involving docker</span>
       </li>
       <li>
-        <strong>Zig:</strong>
-        <span>My journey with the zig language</span>
+        <strong class="text-primary dark:text-white">Zig:</strong>
+        <span class="text-primary/70 dark:text-white/70">My journey with the zig language</span>
       </li>
       <li>
-        <strong>Php:</strong>
-        <span>Insights into my primary language</span>
+        <strong class="text-primary dark:text-white">Php:</strong>
+        <span class="text-primary/70 dark:text-white/70">Insights into my primary language</span>
       </li>
     </ul>
 
     <span class="flex items-center pt-8">
-      <span class="shrink-0 pe-4 text-gray-900">All Posts</span>
+      <span class="shrink-0 pe-4 text-primary dark:text-white">All Posts</span>
 
-      <span class="h-px flex-1 bg-gray-300"></span>
+      <span class="h-px flex-1 bg-primary/30 dark:bg-white/30"></span>
     </span>
 
     {
-      posts.map((post) => (
+      posts.map((post: any) => (
         <PostCard
           title={post.data.title}
           date={post.data.pubDate.toLocaleDateString('en-US', {
