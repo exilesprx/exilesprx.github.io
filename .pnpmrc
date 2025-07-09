@@ -1,5 +1,0 @@
-# Allow build scripts for essential packages
-allow-build[@parcel/watcher]=true
-allow-build[@tailwindcss/oxide]=true
-allow-build[esbuild]=true
-allow-build[sharp]=true
