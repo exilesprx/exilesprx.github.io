@@ -28,13 +28,5 @@
   },
   "engines": {
     "node": ">=22"
-  },
-  "pnpm": {
-    "allowBuild": {
-      "@parcel/watcher": true,
-      "@tailwindcss/oxide": true,
-      "esbuild": true,
-      "sharp": true
-    }
   }
 }
