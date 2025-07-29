@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@iconify-json/devicon':
-        specifier: ^1.2.33
-        version: 1.2.33
+        specifier: ^1.2.34
+        version: 1.2.34
       '@iconify-json/fa6-brands':
         specifier: ^1.2.6
         version: 1.2.6
@@ -260,8 +260,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@iconify-json/devicon@1.2.33':
-    resolution: {integrity: sha512-aQ2EtuJeij9g69GaeS/OmS5WeVVo4fARG6xaB06ZmxtIER6hPvuyrczsK3YKRQBllQbFkkR74ubPPgJ8SVtO8A==}
+  '@iconify-json/devicon@1.2.34':
+    resolution: {integrity: sha512-IAfFQ8wq+n7Kao75JpqAOW9zotSuELMohg/BlO+ul+mgyl0FZe1QKSu9IvwSu0YgWTcj0soiSnRY6P+6vsn9NQ==}
 
   '@iconify-json/fa6-brands@1.2.6':
     resolution: {integrity: sha512-twL3X4KWcxAhbc1vz/mIDsVr+CAItk1/EIfxKUVQtpv6O4eydk5KNYqTZWdvJNHGInUgd6vKg21aWfVgb5DXEg==}
@@ -2569,7 +2569,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.8':
     optional: true
 
-  '@iconify-json/devicon@1.2.33':
+  '@iconify-json/devicon@1.2.34':
     dependencies:
       '@iconify/types': 2.0.0
 
