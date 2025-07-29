@@ -13,12 +13,12 @@
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@tailwindcss/vite": "^4.1.11",
-    "astro": "^5.12.4",
+    "astro": "^5.12.5",
     "astro-icon": "^1.1.5",
     "sass": "^1.89.2",
     "tailwindcss": "^4.1.11"
   },
-  "packageManager": "pnpm@10.12.4+sha512.5ea8b0deed94ed68691c9bad4c955492705c5eeb8a87ef86bc62c74a26b037b08ff9570f108b2e4dbd1dd1a9186fea925e527f141c648e85af45631074680184",
+  "packageManager": "pnpm@10.14.0-0+sha512.2cd47a0cbf5f1d1de7693a88307a0ede5be94e0d3b34853d800ee775efbea0650cb562b77605ec80bc8d925f5cd27c4dfe8bb04d3a0b76090784c664450d32d6",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
     "prettier": "^3.6.2",

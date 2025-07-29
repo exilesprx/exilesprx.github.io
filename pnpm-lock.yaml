@@ -19,10 +19,10 @@ importers:
         version: 1.2.4
       '@tailwindcss/vite':
         specifier: ^4.1.11
-        version: 4.1.11(vite@6.3.5(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.2))
+        version: 4.1.11(vite@6.3.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(sass@1.89.2))
       astro:
-        specifier: ^5.12.4
-        version: 5.12.4(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.46.1)(sass@1.89.2)(typescript@5.8.2)
+        specifier: ^5.12.5
+        version: 5.12.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.46.1)(sass@1.89.2)(typescript@5.8.2)
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
@@ -97,9 +97,6 @@ packages:
 
   '@capsizecss/unpack@2.4.0':
     resolution: {integrity: sha512-GrSU71meACqcmIUxPYOJvGKF0yryjN/L1aCuE9DViCTJI7bfkjgYDPD1zbNDcINJwSSP6UaBZY9GAbYDO7re0Q==}
-
-  '@emnapi/runtime@1.4.4':
-    resolution: {integrity: sha512-hHyapA4A3gPaDCNfiqyZUStTMqIkKRshqPIuDOXv1hcBnD4U3l8cP0T1HMCfGRxQ6V64TGCcoswChANyOAwbQg==}
 
   '@emnapi/runtime@1.4.5':
     resolution: {integrity: sha512-++LApOtY0pEEz1zrd9vy1/zXVaVJJ/EbAF3u0fXIzPJEDtnITsBGbbK0EkM72amhl/R5b+5xx0Y/QhcVOpuulg==}
@@ -860,9 +857,6 @@ packages:
   '@types/nlcst@2.0.3':
     resolution: {integrity: sha512-vSYNSDe6Ix3q+6Z7ri9lyWqgGhJTmzRjZRqyq15N0Z/1/UnVsno9G/N40NBijoYx2seFDIl0+B2mgAb9mezUCA==}
 
-  '@types/node@24.0.10':
-    resolution: {integrity: sha512-ENHwaH+JIRTDIEEbDK6QSQntAYGtbvdDXnMXnZaZ6k13Du1dPMmprkEHIL7ok2Wl2aZevetwTAb5S+7yIF+enA==}
-
   '@types/node@24.1.0':
     resolution: {integrity: sha512-ut5FthK5moxFKH2T1CUOC6ctR67rQRvvHdFLCD2Ql6KXmMuCrjsSsRI9UsLCm9M18BMwClv4pn327UvB7eeO1w==}
 
@@ -915,16 +909,16 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
-  astro@5.12.4:
-    resolution: {integrity: sha512-ns+/KpfWToKvVf2DJTj4EIa4U59/XVBXeeq6VZUr5DXe6OZJFs8NfJi+W20nRm5nduIeBZGRzaoxPFq9lm4WEg==}
+  astro@5.12.5:
+    resolution: {integrity: sha512-cq+2h13F/aznM91bxXxKgqYj36gbXe6jC5kiUAXgWlh2nTyNtiCNMdDFpL2wIWSzac5+KzvRjKmxsYWbcmD4EQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.10.0:
-    resolution: {integrity: sha512-/1xYAC4MP/HEG+3duIhFr4ZQXR4sQXOIe+o6sdqzeykGLx6Upp/1p8MHqhINOvGeP7xyNHe7tsiJByc4SSVUxw==}
+  axios@1.11.0:
+    resolution: {integrity: sha512-1Lx3WLFQWm3ooKDYZD1eXmoGO9fxYQjrycfHFC8P0sCfQVXyROp0p9PFWBehewBOdCwHc+f/b8I0fMto5eSfwA==}
 
   axobject-query@4.1.0:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
@@ -1278,8 +1272,8 @@ packages:
   fontkit@2.0.4:
     resolution: {integrity: sha512-syetQadaUEDNdxdugga9CpEYVaQIxOwk7GlwZWWZ19//qW4zE5bknOKeMBDYAASwnpaSHKJITRLMF9m1fp3s6g==}
 
-  form-data@4.0.3:
-    resolution: {integrity: sha512-qsITQPfmvMOSAdeyZ+12I1c+CKSstAFAwu+97zrnWAbIr5u8wfsExUzCesVLC8NgHuRUqNN4Zy6UPWUTRGslcA==}
+  form-data@4.0.4:
+    resolution: {integrity: sha512-KrGhL9Q4zjj0kiUt5OO4Mr/A/jlI2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe20rmcuuvMHNdZFp+4IlGTMF0Ow==}
     engines: {node: '>= 6'}
 
   fs-minipass@2.1.0:
@@ -1431,8 +1425,8 @@ packages:
     resolution: {integrity: sha512-UcVfVfaK4Sc4m7X3dUSoHoozQGBEFeDC+zVo06t98xe8CzHSZZBekNXH+tu0NalHolcJ/QAGqS46Hef7QXBIMw==}
     engines: {node: '>=16'}
 
-  jiti@2.4.2:
-    resolution: {integrity: sha512-rg9zJN+G4n2nfJl5MW3BMygZX56zKPNVEYYqq7adpmMh4Jn2QNEwhvQlFy6jPVdcod7txZtKHWnyZiA3a0zP7A==}
+  jiti@2.5.1:
+    resolution: {integrity: sha512-twQoecYPiVA5K/h6SxtORw/Bs3ar+mLUtoPSc7iMXzQzK8d7eJ/R09wmTwAjiamETn1cXYPGfNnu7DMoHgu12w==}
     hasBin: true
 
   js-yaml@4.1.0:
@@ -2481,11 +2475,6 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@emnapi/runtime@1.4.4':
-    dependencies:
-      tslib: 2.8.1
-    optional: true
-
   '@emnapi/runtime@1.4.5':
     dependencies:
       tslib: 2.8.1
@@ -2586,7 +2575,7 @@ snapshots:
       '@iconify/types': 2.0.0
       '@iconify/utils': 2.3.0
       '@types/tar': 6.1.13
-      axios: 1.10.0
+      axios: 1.11.0
       cheerio: 1.0.0
       domhandler: 5.0.3
       extract-zip: 2.0.1
@@ -2756,7 +2745,7 @@ snapshots:
 
   '@img/sharp-wasm32@0.34.3':
     dependencies:
-      '@emnapi/runtime': 1.4.4
+      '@emnapi/runtime': 1.4.5
     optional: true
 
   '@img/sharp-win32-arm64@0.34.3':
@@ -2964,7 +2953,7 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.3.0
       enhanced-resolve: 5.18.2
-      jiti: 2.4.2
+      jiti: 2.5.1
       lightningcss: 1.30.1
       magic-string: 0.30.17
       source-map-js: 1.2.1
@@ -3032,12 +3021,12 @@ snapshots:
       postcss-selector-parser: 6.0.10
       tailwindcss: 4.1.11
 
-  '@tailwindcss/vite@4.1.11(vite@6.3.5(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.2))':
+  '@tailwindcss/vite@4.1.11(vite@6.3.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(sass@1.89.2))':
     dependencies:
       '@tailwindcss/node': 4.1.11
       '@tailwindcss/oxide': 4.1.11
       tailwindcss: 4.1.11
-      vite: 6.3.5(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.2)
+      vite: 6.3.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(sass@1.89.2)
 
   '@trysound/sax@0.2.0': {}
 
@@ -3065,17 +3054,13 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
 
-  '@types/node@24.0.10':
-    dependencies:
-      undici-types: 7.8.0
-
   '@types/node@24.1.0':
     dependencies:
       undici-types: 7.8.0
 
   '@types/tar@6.1.13':
     dependencies:
-      '@types/node': 24.0.10
+      '@types/node': 24.1.0
       minipass: 4.2.8
 
   '@types/unist@3.0.3': {}
@@ -3119,7 +3104,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@5.12.4(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.46.1)(sass@1.89.2)(typescript@5.8.2):
+  astro@5.12.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(rollup@4.46.1)(sass@1.89.2)(typescript@5.8.2):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
@@ -3175,8 +3160,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.16.1
       vfile: 6.0.3
-      vite: 6.3.5(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.2)
-      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.2))
+      vite: 6.3.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(sass@1.89.2)
+      vitefu: 1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(sass@1.89.2))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -3222,10 +3207,10 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.10.0:
+  axios@1.11.0:
     dependencies:
       follow-redirects: 1.15.9
-      form-data: 4.0.3
+      form-data: 4.0.4
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
@@ -3586,7 +3571,7 @@ snapshots:
       unicode-properties: 1.4.1
       unicode-trie: 2.0.0
 
-  form-data@4.0.3:
+  form-data@4.0.4:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
@@ -3794,7 +3779,7 @@ snapshots:
     dependencies:
       is-inside-container: 1.0.0
 
-  jiti@2.4.2: {}
+  jiti@2.5.1: {}
 
   js-yaml@4.1.0:
     dependencies:
@@ -4829,7 +4814,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@6.3.5(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.2):
+  vite@6.3.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(sass@1.89.2):
     dependencies:
       esbuild: 0.25.8
       fdir: 6.4.6(picomatch@4.0.3)
@@ -4840,13 +4825,13 @@ snapshots:
     optionalDependencies:
       '@types/node': 24.1.0
       fsevents: 2.3.3
-      jiti: 2.4.2
+      jiti: 2.5.1
       lightningcss: 1.30.1
       sass: 1.89.2
 
-  vitefu@1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.2)):
+  vitefu@1.1.1(vite@6.3.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(sass@1.89.2)):
     optionalDependencies:
-      vite: 6.3.5(@types/node@24.1.0)(jiti@2.4.2)(lightningcss@1.30.1)(sass@1.89.2)
+      vite: 6.3.5(@types/node@24.1.0)(jiti@2.5.1)(lightningcss@1.30.1)(sass@1.89.2)
 
   web-namespaces@2.0.1: {}
 
