@@ -22,5 +22,10 @@ jobs:
         run: |
           corepack enable
           pnpm install
-      - name: Check and build site
+      - name: Quality checks
+        run: |
+          pnpm run format
+          pnpm run lint
+          pnpm astro check
+      - name: Build site
         run: pnpm run build
