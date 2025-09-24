@@ -22,10 +22,11 @@ jobs:
         run: |
           corepack enable
           pnpm install
-      - name: Quality checks
-        run: |
-          pnpm run format
-          pnpm run lint
-          pnpm astro check
+      - name: Check format
+        run: pnpm run format
+      - name: Lint
+        run: pnpm run lint
+      - name: Astro check
+        run: pnpm astro check
       - name: Build site
         run: pnpm run build
