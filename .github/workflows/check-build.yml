@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['22', '24']
+        node-version: ['24']
     name: Node ${{ matrix.node-version }}
     steps:
       - uses: actions/checkout@v4
@@ -18,10 +18,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
       - name: Install dependencies
-        run: |
-          corepack enable
-          pnpm install
+        run: pnpm install
       - name: Check format
         run: pnpm run format
       - name: Lint

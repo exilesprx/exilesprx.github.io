@@ -37,7 +37,7 @@ jobs:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
         with:
           path: .
-          node-version: 22
+          node-version: 24
 
   # Deployment job
   deploy:
