@@ -18,7 +18,7 @@
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@tailwindcss/vite": "^4.1.16",
-    "astro": "^5.15.1",
+    "astro": "^5.15.2",
     "astro-icon": "^1.1.5",
     "sass": "^1.93.2",
     "tailwindcss": "^4.1.16",
