@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
-    "@iconify-json/devicon": "^1.2.54",
+    "@iconify-json/devicon": "^1.2.55",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@tailwindcss/vite": "^4.1.18",
