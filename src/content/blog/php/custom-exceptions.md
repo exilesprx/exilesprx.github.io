@@ -2,7 +2,7 @@
 title: Overengineering Custom Exceptions - A Case Study
 description: Implementing custom exceptions
 slug: 'php/custom-exceptions'
-pubDate: 1768863155
+pubDate: 1768964059655
 tags: ['php', 'exceptions']
 isDraft: false
 ---
