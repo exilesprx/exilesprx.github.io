@@ -82,7 +82,6 @@ class DomainErrorException extends \Exception
     }
 }
 
-// initialization
 $message = sprintf("%s - %s", "Some normal message", "Additional details");
 try {
     throw DomainErrorException::fromDomainError($message);
