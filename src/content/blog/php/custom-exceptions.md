@@ -4,7 +4,7 @@ description: Implementing custom exceptions
 slug: 'php/custom-exceptions'
 pubDate: 1768863155
 tags: ['php', 'exceptions']
-isDraft: true
+isDraft: false
 ---
 
 Today, I encountered a custom exception implementation that illustrates how easy it is to overcomplicate a simple concept. While I've anonymized the code by replacing the actual application name with "Domain," the issues remain instructive:
