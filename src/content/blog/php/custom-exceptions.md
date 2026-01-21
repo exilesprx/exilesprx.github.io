@@ -46,7 +46,18 @@ The typical usage made these problems even more apparent:
 
 ```php
 <?php
-$exception = new DomainErrorException("", 0, null, "Some custom domain exception")
+$json = '{"message": "Some custom domain exception message", "detailed_error": "Some details"}';
+$message = json_decode($json);
+
+try {
+    throw new DomainErrorException("", 0, null, $message);
+} catch (DomainErrorException $e) {
+    # Is this the error I want?
+    Logger::error($e->getDomainError());
+
+    # Or is it this one?
+    Logger::error($e->getErrorMessage());
+}
 ```
 
 Notice the empty string and zeros passed for standard parameters, while the actual error information is relegated to a fourth, non-standard argument.
@@ -73,7 +84,11 @@ class DomainErrorException extends \Exception
 
 // initialization
 $message = sprintf("%s - %s", "Some normal message", "Additional details");
-throw DomainErrorException::fromDomainError($message);
+try {
+    throw DomainErrorException::fromDomainError($message);
+} catch(DomainErrorException $e) {
+    Logger::error($e->getMessage());
+}
 ```
 
 ### Benefits of This Approach
