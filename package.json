@@ -24,7 +24,7 @@
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.28.1",
+  "packageManager": "pnpm@10.28.2",
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.6",
     "@eslint/js": "^9.39.2",
@@ -37,7 +37,7 @@
     "eslint-plugin-astro": "^1.5.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-unused-imports": "^4.3.0",
-    "globals": "^17.2.0",
+    "globals": "^17.3.0",
     "jiti": "^2.6.1",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
