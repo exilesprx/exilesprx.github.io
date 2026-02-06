@@ -2,9 +2,11 @@
 import BlogLayout from '@layouts/BlogLayout.astro';
 import PostCard from '@components/PostCard.astro';
 import { getCollection } from 'astro:content';
-const posts = await getCollection('blog', ({ data }) => {
-  return data.isDraft !== true;
-});
+const posts = (
+  await getCollection('blog', ({ data }) => {
+    return data.isDraft !== true;
+  })
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <BlogLayout
@@ -19,14 +21,18 @@ const posts = await getCollection('blog', ({ data }) => {
     </div>
 
     <span class="flex items-center pt-8">
-      <span class="shrink-0 pe-4 text-primary dark:text-white">Featured Project Stories</span>
+      <span class="shrink-0 pe-4 text-primary dark:text-white"
+        >Featured Project Stories</span
+      >
 
       <span class="h-px flex-1 bg-primary/30 dark:bg-white/30"></span>
     </span>
 
     <ol class="space-y-6 mt-8">
       <li>
-        <strong class="text-primary dark:text-white">Optimizing docker builds</strong>
+        <strong class="text-primary dark:text-white"
+          >Optimizing docker builds</strong
+        >
         <ul class="mt-2 space-y-1">
           <li class="text-primary/70 dark:text-white/70">
             Learn about the decisions made to improve the quality of a docker
@@ -44,7 +50,9 @@ const posts = await getCollection('blog', ({ data }) => {
       <li>
         <strong class="text-primary dark:text-white">Zig development</strong>
         <ul class="mt-2 space-y-1">
-          <li class="text-primary/70 dark:text-white/70">Cheat sheet for zig language. Reference: https://ziglings.org</li>
+          <li class="text-primary/70 dark:text-white/70">
+            Cheat sheet for zig language. Reference: https://ziglings.org
+          </li>
           <li>
             <a
               href="/posts/zig/zig-cheatsheet"
@@ -70,7 +78,9 @@ const posts = await getCollection('blog', ({ data }) => {
     </ol>
 
     <span class="flex items-center pt-8">
-      <span class="shrink-0 pe-4 text-primary dark:text-white">Project Categories</span>
+      <span class="shrink-0 pe-4 text-primary dark:text-white"
+        >Project Categories</span
+      >
 
       <span class="h-px flex-1 bg-primary/30 dark:bg-white/30"></span>
     </span>
@@ -78,15 +88,21 @@ const posts = await getCollection('blog', ({ data }) => {
     <ul class="space-y-4 mt-8">
       <li>
         <strong class="text-primary dark:text-white">Docker:</strong>
-        <span class="text-primary/70 dark:text-white/70">Insights into decisions and results involving docker</span>
+        <span class="text-primary/70 dark:text-white/70"
+          >Insights into decisions and results involving docker</span
+        >
       </li>
       <li>
         <strong class="text-primary dark:text-white">Zig:</strong>
-        <span class="text-primary/70 dark:text-white/70">My journey with the zig language</span>
+        <span class="text-primary/70 dark:text-white/70"
+          >My journey with the zig language</span
+        >
       </li>
       <li>
         <strong class="text-primary dark:text-white">Php:</strong>
-        <span class="text-primary/70 dark:text-white/70">Insights into my primary language</span>
+        <span class="text-primary/70 dark:text-white/70"
+          >Insights into my primary language</span
+        >
       </li>
     </ul>
 
