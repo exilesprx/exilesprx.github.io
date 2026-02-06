@@ -1,6 +1,6 @@
 ---
 title: Why Mocking External Services in Unit Tests Is Not Only Okay - It's Necessary
-description: A
+description: A practical look at why unit tests should mock external services and databases, and how properly separating unit, integration, and acceptance tests leads to faster, more reliable, and more meaningful test suites.
 slug: 'testing/unit-testing-misconceptions'
 pubDate: 1738878971000
 tags: ['testing', 'unit']
