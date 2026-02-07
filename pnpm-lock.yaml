@@ -12,8 +12,8 @@ importers:
         specifier: ^0.9.6
         version: 0.9.6(prettier-plugin-astro@0.14.1)(prettier@3.8.1)(typescript@5.9.3)
       '@iconify-json/devicon':
-        specifier: ^1.2.57
-        version: 1.2.57
+        specifier: ^1.2.58
+        version: 1.2.58
       '@iconify-json/fa6-brands':
         specifier: ^1.2.6
         version: 1.2.6
@@ -398,8 +398,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/devicon@1.2.57':
-    resolution: {integrity: sha512-I8oMarkVgcCtSDzYFTVf7WlKSFAXMh5qECEeXsf5+J/MUSu3t76QsvNolfRVwui9LjJAzrZ7EHQFXXIlQ3hIjw==}
+  '@iconify-json/devicon@1.2.58':
+    resolution: {integrity: sha512-hgbYB4a2GI5VPN9rcLnrwCLP9iXIRLnKUpDFf0+P/O7CPyR/jFdCvZbIckvsbXAyBWnQTaWw+C6dq8NfO9P0Jw==}
 
   '@iconify-json/fa6-brands@1.2.6':
     resolution: {integrity: sha512-twL3X4KWcxAhbc1vz/mIDsVr+CAItk1/EIfxKUVQtpv6O4eydk5KNYqTZWdvJNHGInUgd6vKg21aWfVgb5DXEg==}
@@ -3697,7 +3697,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify-json/devicon@1.2.57':
+  '@iconify-json/devicon@1.2.58':
     dependencies:
       '@iconify/types': 2.0.0
 
