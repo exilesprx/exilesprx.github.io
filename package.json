@@ -13,20 +13,20 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.6",
+    "@astrojs/check": "^0.9.7",
     "@iconify-json/devicon": "^1.2.59",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@tailwindcss/vite": "^4.2.1",
-    "astro": "^5.18.0",
+    "astro": "^5.18.1",
     "astro-icon": "^1.1.5",
     "sass": "^1.97.3",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3"
   },
-  "packageManager": "pnpm@10.30.3",
+  "packageManager": "pnpm@10.32.0",
   "devDependencies": {
-    "@astrojs/ts-plugin": "^1.10.6",
+    "@astrojs/ts-plugin": "^1.10.7",
     "@eslint/js": "^9.39.4",
     "@tailwindcss/typography": "^0.5.19",
     "@types/eslint-config-prettier": "^6.11.3",
