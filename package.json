@@ -20,7 +20,7 @@
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^5.18.1",
     "astro-icon": "^1.1.5",
-    "sass": "^1.97.3",
+    "sass": "^1.98.0",
     "tailwindcss": "^4.2.1",
     "typescript": "^5.9.3"
   },
