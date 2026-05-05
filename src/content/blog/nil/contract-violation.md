@@ -1,9 +1,9 @@
 ---
-title: Null can be a contract violation
-description: How and why returning null can violate the contract of a method, leading to bugs and maintenance issues.
-slug: 'null/contract-violation'
+title: Nil can be a contract violation
+description: How and why returning nil can violate the contract of a method, leading to bugs and maintenance issues.
+slug: 'nil/contract-violation'
 pubDate: 1777994374077
-tags: ['null', 'contracts']
+tags: ['nil', 'contracts']
 isDraft: false
 ---
 
