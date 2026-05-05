@@ -70,8 +70,12 @@ This is flat and readable enough, but notice what's happening: every null check 
 **The arrow anti-pattern:**
 
 ```java
+
+User user = getUser(id);
 if (user != null) {
+    Address address = getAddress(user);
     if (address != null) {
+        String city = getCity(address);
         if (city != null) {
             // actual logic, buried three levels deep
         }
