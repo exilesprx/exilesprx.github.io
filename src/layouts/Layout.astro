@@ -38,7 +38,9 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     <ClientRouter />
   </head>
-  <body class="font-mono bg-white dark:bg-slate-900 text-primary dark:text-white dark-mode-transition">
+  <body
+    class="text-primary dark-mode-transition bg-white font-mono dark:bg-slate-900 dark:text-white"
+  >
     <slot />
     <Footer />
   </body>

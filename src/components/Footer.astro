@@ -32,14 +32,16 @@ const navLinks = [
 ];
 ---
 
-<footer class="bg-gray-100 dark:bg-slate-800 text-primary dark:text-white border-t border-gray-200 dark:border-slate-700 dark-mode-transition">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+<footer
+  class="text-primary dark-mode-transition border-t border-gray-200 bg-gray-100 dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+>
+  <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
     <!-- Top footer section with links -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+    <div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
       <!-- Logo/branding section -->
       <div class="flex flex-col">
-        <h2 class="text-xl font-bold mb-3">Andrew Campbell</h2>
-        <p class="text-sm text-primary/70 dark:text-white/70 mb-4">
+        <h2 class="mb-3 text-xl font-bold">Andrew Campbell</h2>
+        <p class="text-primary/70 mb-4 text-sm dark:text-white/70">
           Software Engineer specializing in web development and creating elegant
           solutions to complex problems.
         </p>
@@ -47,13 +49,13 @@ const navLinks = [
 
       <!-- Quick links -->
       <div class="flex flex-col">
-        <h3 class="font-semibold mb-3 text-primary dark:text-white">Links</h3>
+        <h3 class="text-primary mb-3 font-semibold dark:text-white">Links</h3>
         <nav class="flex flex-col space-y-2">
           {
             navLinks.map((link) => (
               <a
                 href={link.url}
-                class="text-sm text-primary/70 dark:text-white/70 hover:text-primary dark:hover:text-white transition-colors"
+                class="text-primary/70 hover:text-primary text-sm transition-colors dark:text-white/70 dark:hover:text-white"
               >
                 {link.name}
               </a>
@@ -64,7 +66,7 @@ const navLinks = [
 
       <!-- Connect section -->
       <div class="flex flex-col">
-        <h3 class="font-semibold text-primary dark:text-white mb-3">Connect</h3>
+        <h3 class="text-primary mb-3 font-semibold dark:text-white">Connect</h3>
         <div class="flex flex-wrap gap-4">
           {
             socialLinks.map((link) => (
@@ -72,7 +74,7 @@ const navLinks = [
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center text-primary/70 dark:text-white/70 hover:text-primary dark:hover:text-white transition-colors"
+                class="text-primary/70 hover:text-primary flex items-center transition-colors dark:text-white/70 dark:hover:text-white"
                 aria-label={`Visit ${link.name}`}
               >
                 <Icon
@@ -89,7 +91,7 @@ const navLinks = [
 
     <!-- Bottom footer with copyright -->
     <div
-      class="pt-6 border-t border-gray-200 dark:border-slate-700 flex flex-col md:flex-row justify-between text-sm text-primary/70 dark:text-white/70"
+      class="text-primary/70 flex flex-col justify-between border-t border-gray-200 pt-6 text-sm md:flex-row dark:border-slate-700 dark:text-white/70"
     >
       <p>&#169; {year} {author}. All rights reserved.</p>
       <p class="mt-2 md:mt-0">Built with Astro and Tailwind CSS</p>

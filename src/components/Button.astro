@@ -3,11 +3,11 @@ const { link, title } = Astro.props;
 ---
 
 <a
-  class="group relative text-center text-sm font-medium focus:ring-3 focus:outline-hidden no-underline"
+  class="group relative text-center text-sm font-medium no-underline focus:ring-3 focus:outline-hidden"
   href={link}
 >
   <span
-    class="block border border-primary/85 bg-primary/85 dark:bg-white text-white dark:text-primary px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 font-bold hover:opacity-80"
+    class="border-primary/85 bg-primary/85 dark:text-primary block border px-12 py-3 font-bold text-white transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1 hover:opacity-80 dark:bg-white"
   >
     {title}
   </span>
