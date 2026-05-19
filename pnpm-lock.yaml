@@ -24,8 +24,8 @@ importers:
         specifier: ^4.3.0
         version: 4.3.0(vite@7.3.3(@types/node@25.9.0)(jiti@2.7.0)(lightningcss@1.32.0)(sass@1.99.0)(yaml@2.9.0))
       astro:
-        specifier: ^6.3.3
-        version: 6.3.3(@types/node@25.9.0)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.60.4)(sass@1.99.0)(yaml@2.9.0)
+        specifier: ^6.3.5
+        version: 6.3.5(@types/node@25.9.0)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.60.4)(sass@1.99.0)(yaml@2.9.0)
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
@@ -1336,8 +1336,8 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
-  astro@6.3.3:
-    resolution: {integrity: sha512-wvLIZQYbBZt6U8gyflBW4SLBypaqdwLZUH93rT3oT53cmQ0bTGubvMAGjqBRoheOYzYcTJZtW6czztzbu4kQ5g==}
+  astro@6.3.5:
+    resolution: {integrity: sha512-gU+4KedkbTuVgz7YoVAN+9Ftnq0GaYwejxK2NbqDzB0M9dWd0f3kXZBuaM9hzbchRFoRAJfJjFtdX9LK6Ir7ZA==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2063,8 +2063,8 @@ packages:
   longest-streak@3.1.0:
     resolution: {integrity: sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g==}
 
-  lru-cache@11.3.6:
-    resolution: {integrity: sha512-Gf/KoL3C/MlI7Bt0PGI9I+TeTC/I6r/csU58N4BSNc4lppLBeKsOdFYkK+dX0ABDUMJNfCHTyPpzwwO21Awd3A==}
+  lru-cache@11.4.0:
+    resolution: {integrity: sha512-W+R+kFL4HgVxONq2bhXPi3bGpzGe/yEhVOp233qw9wCRtgncJ15P3bC+e4zZMu4Cq7d+WAJjXGW0uUkifhcatA==}
     engines: {node: 20 || >=22}
 
   magic-string@0.30.21:
@@ -4203,7 +4203,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@6.3.3(@types/node@25.9.0)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.60.4)(sass@1.99.0)(yaml@2.9.0):
+  astro@6.3.5(@types/node@25.9.0)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.60.4)(sass@1.99.0)(yaml@2.9.0):
     dependencies:
       '@astrojs/compiler': 4.0.0
       '@astrojs/internal-helpers': 0.9.1
@@ -5043,7 +5043,7 @@ snapshots:
 
   longest-streak@3.1.0: {}
 
-  lru-cache@11.3.6: {}
+  lru-cache@11.4.0: {}
 
   magic-string@0.30.21:
     dependencies:
@@ -6014,7 +6014,7 @@ snapshots:
       chokidar: 5.0.0
       destr: 2.0.5
       h3: 1.15.11
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
       node-fetch-native: 1.6.7
       ofetch: 1.5.1
       ufo: 1.6.4
