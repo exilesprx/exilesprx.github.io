@@ -1,6 +1,6 @@
 import js from '@eslint/js';
 import parser from '@typescript-eslint/parser';
-import astroParser from 'astro-eslint-parser';
+import * as astroParser from 'astro-eslint-parser';
 import prettierEslint from 'eslint-config-prettier';
 import astroPlugin from 'eslint-plugin-astro';
 import importPlugin from 'eslint-plugin-import-x';
