@@ -29,7 +29,7 @@
     "@astrojs/ts-plugin": "^1.10.9",
     "@eslint/js": "^10.0.1",
     "@tailwindcss/typography": "^0.5.20",
-    "@types/node": "^26.0.1",
+    "@types/node": "^26.1.0",
     "@typescript-eslint/parser": "^8.62.1",
     "astro-eslint-parser": "^2.1.0",
     "eslint": "^10.6.0",
