@@ -26,7 +26,7 @@
   },
   "packageManager": "pnpm@11.20.0",
   "devDependencies": {
-    "@astrojs/ts-plugin": "^1.10.10",
+    "@astrojs/ts-plugin": "^1.10.11",
     "@eslint/js": "^10.0.1",
     "@tailwindcss/typography": "^0.5.20",
     "@types/node": "^26.2.0",
