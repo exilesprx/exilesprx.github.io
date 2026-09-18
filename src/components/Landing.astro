@@ -49,9 +49,7 @@ const items: LandingProps = {
 <section>
   <div class="mx-auto min-h-screen">
     <div class="grid grid-cols-1 md:grid-cols-4">
-      <div
-        class="dark-mode-transition min-h-screen bg-gray-100 p-8 pt-12 md:col-span-2 lg:pt-24 dark:bg-slate-800"
-      >
+      <div class="dark-mode-transition min-h-screen bg-gray-100 p-8 pt-12 md:col-span-2 lg:pt-24 dark:bg-slate-800">
         <div class="grid justify-center justify-items-center text-center">
           <div class="py-4">
             <Image
@@ -62,19 +60,13 @@ const items: LandingProps = {
               loading="lazy"
             />
           </div>
-          <div
-            class="text-primary py-4 text-2xl font-bold md:text-2xl lg:text-4xl dark:text-white"
-          >
+          <div class="text-primary py-4 text-2xl font-bold md:text-2xl lg:text-4xl dark:text-white">
             {items.title}
           </div>
-          <div
-            class="text-primary lg:text-md text-sm md:text-sm dark:text-white"
-          >
+          <div class="text-primary lg:text-md text-sm md:text-sm dark:text-white">
             aka {items.alias}
           </div>
-          <div
-            class="text-primary py-4 text-lg md:text-lg lg:text-xl dark:text-white"
-          >
+          <div class="text-primary py-4 text-lg md:text-lg lg:text-xl dark:text-white">
             {items.subtitle}
           </div>
           <div class="grid grid-cols-1 justify-center">
@@ -87,31 +79,25 @@ const items: LandingProps = {
                 link={items.cta.link}
               />
             </div>
-            <div
-              class="grid grid-cols-3 justify-center justify-items-center gap-6"
-            >
-              {
-                items.social.map((social) => (
-                  <a
-                    class="text-primary/85 hover:text-primary dark-mode-transition py-4 dark:text-white dark:hover:text-white"
-                    href={social.link}
-                  >
-                    <Icon
-                      name={social.icon}
-                      class="size-6 lg:size-12"
-                      fill="currentColor"
-                    />
-                  </a>
-                ))
-              }
+            <div class="grid grid-cols-3 justify-center justify-items-center gap-6">
+              {items.social.map((social) => (
+                <a
+                  class="text-primary/85 hover:text-primary dark-mode-transition py-4 dark:text-white dark:hover:text-white"
+                  href={social.link}
+                >
+                  <Icon
+                    name={social.icon}
+                    class="size-6 lg:size-12"
+                    fill="currentColor"
+                  />
+                </a>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
-      <div
-        class="dark-mode-transition min-h-screen justify-center bg-gray-50 p-8 pt-12 md:col-span-2 lg:pt-24 dark:bg-slate-900"
-      >
+      <div class="dark-mode-transition min-h-screen justify-center bg-gray-50 p-8 pt-12 md:col-span-2 lg:pt-24 dark:bg-slate-900">
         <About />
       </div>
     </div>
