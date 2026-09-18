@@ -21,18 +21,18 @@ const posts = (
     </div>
 
     <span class="flex items-center pt-8">
-      <span class="text-primary shrink-0 pe-4 dark:text-white"
-        >Featured Project Stories</span
-      >
+      <span class="text-primary shrink-0 pe-4 dark:text-white">
+        Featured Project Stories
+      </span>
 
       <span class="bg-primary/30 h-px flex-1 dark:bg-white/30"></span>
     </span>
 
     <ol class="mt-8 space-y-6">
       <li>
-        <strong class="text-primary dark:text-white"
-          >Optimizing docker builds</strong
-        >
+        <strong class="text-primary dark:text-white">
+          Optimizing docker builds
+        </strong>
         <ul class="mt-2 space-y-1">
           <li class="text-primary/70 dark:text-white/70">
             Learn about the decisions made to improve the quality of a docker
@@ -42,8 +42,9 @@ const posts = (
             <a
               href="/posts/docker/callas-pdf-toolbox"
               class="text-primary hover:text-primary/80 font-medium underline-offset-2 transition-colors hover:underline dark:text-white dark:hover:text-white/80"
-              >Read more</a
             >
+              Read more
+            </a>
           </li>
         </ul>
       </li>
@@ -57,8 +58,9 @@ const posts = (
             <a
               href="/posts/zig/zig-cheatsheet"
               class="text-primary hover:text-primary/80 font-medium underline-offset-2 transition-colors hover:underline dark:text-white dark:hover:text-white/80"
-              >Read more</a
             >
+              Read more
+            </a>
           </li>
         </ul>
       </li>
@@ -70,17 +72,18 @@ const posts = (
             <a
               href="/posts/php/xdebug"
               class="text-primary hover:text-primary/80 font-medium underline-offset-2 transition-colors hover:underline dark:text-white dark:hover:text-white/80"
-              >Read more</a
             >
+              Read more
+            </a>
           </li>
         </ul>
       </li>
     </ol>
 
     <span class="flex items-center pt-8">
-      <span class="text-primary shrink-0 pe-4 dark:text-white"
-        >Project Categories</span
-      >
+      <span class="text-primary shrink-0 pe-4 dark:text-white">
+        Project Categories
+      </span>
 
       <span class="bg-primary/30 h-px flex-1 dark:bg-white/30"></span>
     </span>
@@ -88,21 +91,21 @@ const posts = (
     <ul class="mt-8 space-y-4">
       <li>
         <strong class="text-primary dark:text-white">Docker:</strong>
-        <span class="text-primary/70 dark:text-white/70"
-          >Insights into decisions and results involving docker</span
-        >
+        <span class="text-primary/70 dark:text-white/70">
+          Insights into decisions and results involving docker
+        </span>
       </li>
       <li>
         <strong class="text-primary dark:text-white">Zig:</strong>
-        <span class="text-primary/70 dark:text-white/70"
-          >My journey with the zig language</span
-        >
+        <span class="text-primary/70 dark:text-white/70">
+          My journey with the zig language
+        </span>
       </li>
       <li>
         <strong class="text-primary dark:text-white">Php:</strong>
-        <span class="text-primary/70 dark:text-white/70"
-          >Insights into my primary language</span
-        >
+        <span class="text-primary/70 dark:text-white/70">
+          Insights into my primary language
+        </span>
       </li>
     </ul>
 
@@ -112,19 +115,17 @@ const posts = (
       <span class="bg-primary/30 h-px flex-1 dark:bg-white/30"></span>
     </span>
 
-    {
-      posts.map((post: any) => (
-        <PostCard
-          title={post.data.title}
-          date={post.data.pubDate.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          })}
-          tags={post.data.tags}
-          link={`/posts/${post.id}`}
-        />
-      ))
-    }
+    {posts.map((post: any) => (
+      <PostCard
+        title={post.data.title}
+        date={post.data.pubDate.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        })}
+        tags={post.data.tags}
+        link={`/posts/${post.id}`}
+      />
+    ))}
   </main>
 </BlogLayout>

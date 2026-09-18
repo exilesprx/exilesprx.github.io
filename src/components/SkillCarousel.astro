@@ -31,18 +31,14 @@ const skills: SkillProps[] = [
 ---
 
 <div class="slider max-w-3xs truncate sm:max-w-xs">
-  <div
-    class="slides text-primary dark-mode-transition flex w-max dark:text-white"
-  >
-    {
-      skills.concat(skills).map((skill) => (
-        <Icon
-          name={skill.name}
-          class="mr-6 size-4 opacity-70 lg:size-6"
-          fill="currentColor"
-        />
-      ))
-    }
+  <div class="slides text-primary dark-mode-transition flex w-max dark:text-white">
+    {skills.concat(skills).map((skill) => (
+      <Icon
+        name={skill.name}
+        class="mr-6 size-4 opacity-70 lg:size-6"
+        fill="currentColor"
+      />
+    ))}
   </div>
 </div>
 
