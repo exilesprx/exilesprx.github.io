@@ -39,7 +39,7 @@
     "eslint-plugin-unused-imports": "^4.4.1",
     "globals": "^17.12.0",
     "jiti": "^2.7.0",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.8",
     "prettier-plugin-astro": "^1.0.0",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "sharp": "^0.35.4",
