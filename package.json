@@ -14,24 +14,24 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
-    "@iconify-json/devicon": "^1.2.67",
+    "@iconify-json/devicon": "^1.2.68",
     "@iconify-json/fa6-brands": "^1.2.6",
     "@iconify-json/fa6-solid": "^1.2.4",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.4",
+    "astro": "^7.3.5",
     "astro-icon": "^1.2.0",
     "sass": "^1.105.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
   },
-  "packageManager": "pnpm@12.5.1",
+  "packageManager": "pnpm@12.6.0",
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.12",
     "@eslint/js": "^10.0.1",
     "@tailwindcss/typography": "^0.5.20",
-    "@types/node": "^26.6.2",
-    "@typescript-eslint/parser": "^8.70.1",
-    "astro-eslint-parser": "^3.1.0",
+    "@types/node": "^26.6.3",
+    "@typescript-eslint/parser": "^8.71.0",
+    "astro-eslint-parser": "^3.2.0",
     "eslint": "^10.11.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-astro": "^3.2.1",
@@ -39,11 +39,11 @@
     "eslint-plugin-unused-imports": "^4.4.1",
     "globals": "^17.12.0",
     "jiti": "^2.7.0",
-    "prettier": "^3.9.8",
-    "prettier-plugin-astro": "^1.0.1",
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.1.0",
     "prettier-plugin-tailwindcss": "^0.8.1",
-    "sharp": "^0.35.4",
-    "typescript-eslint": "^8.70.1"
+    "sharp": "^0.35.5",
+    "typescript-eslint": "^8.71.0"
   },
   "engines": {
     "node": ">=22"
