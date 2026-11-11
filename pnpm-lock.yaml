@@ -170,8 +170,8 @@ importers:
         specifier: ^0.9.12
         version: 0.9.12(@emnapi/runtime@1.11.3)(prettier-plugin-astro@1.1.2(prettier@3.9.10))(prettier@3.9.10)(typescript@6.0.3)
       '@iconify-json/devicon':
-        specifier: ^1.2.77
-        version: 1.2.77
+        specifier: ^1.2.78
+        version: 1.2.78
       '@iconify-json/fa6-brands':
         specifier: ^1.2.6
         version: 1.2.6
@@ -577,8 +577,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/devicon@1.2.77':
-    resolution: {integrity: sha512-yH3tZ5ypBUHVTkZOUh+IzkC9qrUH+1bYGgpfMVScXvKJpjVFb6qvi0TidyX54G3rlXBQyg3ilF4zYeE4araNDg==}
+  '@iconify-json/devicon@1.2.78':
+    resolution: {integrity: sha512-7QETp4QimQ4g07bA7LjD4LwcRng4q4Zap8nVp2pyocC4SJkAtfLQpU6bpQEfdYHrWcVMORnrQuTeS/hWYYfKRQ==}
 
   '@iconify-json/fa6-brands@1.2.6':
     resolution: {integrity: sha512-twL3X4KWcxAhbc1vz/mIDsVr+CAItk1/EIfxKUVQtpv6O4eydk5KNYqTZWdvJNHGInUgd6vKg21aWfVgb5DXEg==}
@@ -2382,9 +2382,6 @@ packages:
     resolution: {integrity: sha512-eNRKgb3z66Yp3D2CixVujOUvXLFUTij/zVnV8KRyvFdQwpz7I5DS8UfRkTeLzb64u+dkzDSdelE24izu+zSSUg==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  tailwindcss@4.3.4:
-    resolution: {integrity: sha512-PCJZTFFdG+sL3gvnP1Do9o6GbkvH2q0p04xSs3f7cSvmAeK+sttG+/7ncK1fdRwKFfC7n+wDDJaOMBSefkI9ow==}
-
   tailwindcss@4.3.5:
     resolution: {integrity: sha512-FcQk9BuffmEHJP2G0XmB2SplU1aLTI7j07Kunk+U74Ny+XiWOtzXz9aujFZ/avntw1e2cOv/3PkgzflQ7gX2vQ==}
 
@@ -3129,7 +3126,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify-json/devicon@1.2.77':
+  '@iconify-json/devicon@1.2.78':
     dependencies:
       '@iconify/types': 2.0.0
 
@@ -4813,8 +4810,6 @@ snapshots:
   synckit@0.11.13:
     dependencies:
       '@pkgr/core': 0.3.6
-
-  tailwindcss@4.3.4: {}
 
   tailwindcss@4.3.5: {}
 
